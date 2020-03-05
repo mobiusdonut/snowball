@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Snowball Earth</title>
+    <meta name="description" content="Earth in WebVR!">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="snowball.css">
+    <script src="https://unpkg.com/zdog@1/dist/zdog.dist.min.js"></script>
+    <script src="zdog-demo.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="snowball.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Raleway&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="notmeta">
+      <p id="title">Snowball Earth</p>
+      <div class="container">
+        <canvas class="illo"></canvas>
+        <button class="reset-button">Reset</button>
+        <p class="text">Click &amp; drag to rotate</p>
+        <p class="text">Move the slider to make it snow!</p>
+        <div class="slidecontainer">
+          <input type="range" min="0" max="100" value="50" class="slider" id="myRange">
+        </div>
+        <div class="meta">
+          Made by <a href="https://github.com/mobiusdonut" target="_blank">@mobiusdonut</a> using <a href="https://zzz.dog/" target="_blank">Zdog</a> //
+          <a href="https://github.com/mobiusdonut/mobiusdonut.github.io/blob/master/snowball" target="_blank">code</a>
+        </div>
+      </div>
+      <div class="info">
+        <div class="textcontain">
+          <h2 id="infotexthead">What is the Snowball Earth Hypothesis?</h2>
+          <p id="infotext">The Snowball Earth hypothesis proposes that during one or more of Earth's icehouse climates, Earth's surface became entirely or nearly entirely frozen, sometime earlier than 650 Mya during the Cryogenian period.</p>
+        </div>
+        <div class="w3-bar w3-black">
+          <button class="w3-button w3-left" id="leftbtn">Previous</button>
+          <button class="w3-button w3-right" id="rightbtn">Next</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

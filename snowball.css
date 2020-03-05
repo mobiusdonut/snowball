@@ -1,0 +1,182 @@
+#title {
+  font-family: 'Comfortaa', cursive;
+  font-size: 100px;
+  color: white;
+  margin: 0px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+body {
+  font-family: -apple-system,system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* change this to your background color choice */
+  background: #000028;
+  background-image:
+  radial-gradient(circle, rgba(255,255,255,0.7) 20%, transparent 30%),
+  radial-gradient(circle, rgba(255,255,255,0.7) 20%, transparent 30%),
+  radial-gradient(circle, rgba(255,255,255,0.7) 20%, transparent 30%),
+  radial-gradient(circle, rgba(255,255,255,0.7) 20%, transparent 30%),
+  radial-gradient(circle, rgba(255,255,255,0.7) 20%, transparent 30%),
+  radial-gradient(circle, rgba(255,255,255,0.7) 20%, transparent 30%),
+  radial-gradient(circle, rgba(255,255,255,0.7) 20%, transparent 30%),
+  radial-gradient(circle, rgba(255,255,255,0.7) 20%, transparent 30%),
+  radial-gradient(circle, rgba(255,255,255,0.7) 20%, transparent 30%),
+  radial-gradient(circle, rgba(255,255,255,0.7) 20%, transparent 30%),
+  radial-gradient(circle, rgba(255,255,255,0.7) 20%, transparent 30%),
+  radial-gradient(circle, rgba(255,255,255,0.7) 20%, transparent 30%),
+  radial-gradient(circle, rgba(255,255,255,0.7) 20%, transparent 30%),
+  radial-gradient(circle, rgba(255,255,255,0.7) 20%, transparent 30%),
+  radial-gradient(circle, rgba(255,255,255,0.7) 20%, transparent 30%),
+  radial-gradient(circle, rgba(255,255,255,0.7) 20%, transparent 30%),
+  radial-gradient(circle, rgba(255,255,255,0.7) 20%, transparent 30%),
+  radial-gradient(circle, rgba(255,255,255,0.7) 20%, transparent 30%);
+  background-size: 4px 4px, 3px 3px, 5px 5px, 3px 3px, 6px 6px, 4px 4px, 5px 5px, 4px 4px, 6px 6px, 3px 3px, 5px 5px, 4px 4px, 3px 3px, 6px 6px, 5px 5px, 4px 4px, 5px 5px, 6px 6px;
+  background-position: 20% 10%, 5% 20%, 10% 75%, 22% 35%, 30% 30%, 40% 50%, 45% 20%, 65% 20%, 85% 30%, 98% 90%, 20% 80%, 50% 80%, 75% 80%, 89% 75%, 90% 95%, 60% 70%, 65% 40%, 90% 20% ;
+  background-repeat: no-repeat;
+  animation: twinkle ease-in 0.3s infinite;
+}
+
+.notmeta {
+  float:left;
+}
+
+.container {
+  margin: 0px;
+  text-align: center;
+  float:left;
+  padding-bottom: 20px;
+  display: inline-block;
+}
+
+.info {
+  display: inline-block;
+  background-color: #fff;
+  opacity: 0.9;
+  margin-left: 10px;
+  width: 500px;
+}
+
+.textcontain {
+  margin: 10px;
+}
+
+.illo {
+  cursor: move;
+}
+
+.text {
+  text-align: center;
+  color: #8E92A2;
+  font-family: 'Raleway', sans-serif;
+}
+
+#infotext {
+  font-family: 'Raleway', sans-serif;
+}
+
+#infotexthead {
+  font-family: 'Raleway', sans-serif;
+}
+
+button {
+  display: block;
+  margin: auto;
+  background: #444857;
+  color: white;
+  font-size: 14px;
+  font-family: inherit;
+  border: none;
+  border-radius: 3px;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+button:hover {
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.25);
+}
+
+a {
+  color: #EA0;
+  font-weight: 700;
+}
+
+@keyframes twinkle{
+  to{
+  background-image:
+  radial-gradient(circle, rgba(255,255,255,0.7) 20%, transparent 30%),
+  radial-gradient(circle, #fff 20%, transparent 30%),
+  radial-gradient(circle, rgba(255,255,255,0.7) 20%, transparent 30%),
+  radial-gradient(circle, rgba(255,255,255,0.7) 20%, transparent 30%),
+  radial-gradient(circle, #fff 20%, transparent 30%),
+  radial-gradient(circle, rgba(255,255,255,0.7) 20%, transparent 30%),
+  radial-gradient(circle, rgba(255,255,255,0.7) 20%, transparent 30%),
+  radial-gradient(circle, #fff 20%, transparent 30%),
+  radial-gradient(circle, rgba(255,255,255,0.7) 20%, transparent 30%),
+  radial-gradient(circle, #fff 20%, transparent 30%),
+  radial-gradient(circle, rgba(255,255,255,0.7) 20%, transparent 30%),
+  radial-gradient(circle, #fff 20%, transparent 30%),
+  radial-gradient(circle, rgba(255,255,255,0.7) 20%, transparent 30%),
+  radial-gradient(circle, rgba(255,255,255,0.7) 20%, transparent 30%),
+  radial-gradient(circle, #fff 20%, transparent 30%),
+  radial-gradient(circle, rgba(255,255,255,0.7) 20%, transparent 30%),
+  radial-gradient(circle, #fff 20%, transparent 30%),
+  radial-gradient(circle, #fff 20%, transparent 30%);  }
+}
+
+.slidecontainer {
+  width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+ -webkit-appearance: none;
+ width: 500px;
+ height: 15px;
+ border-radius: 5px;
+ background: #d3d3d3;
+ outline: none;
+ opacity: 1;
+ -webkit-transition: .2s;
+ transition: opacity .2s;
+ margin-top: 20px;
+}
+
+.slider::-webkit-slider-thumb {
+ -webkit-appearance: none;
+ appearance: none;
+ width: 25px;
+ height: 25px;
+ border-radius: 50%;
+ background: #ffffff;
+ cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+ width: 25px;
+ height: 25px;
+ border-radius: 50%;
+ background: #ffffff;
+ cursor: pointer;
+}
+
+.meta {
+  color: white;
+}
+
+.w3-bar{width:100%;overflow:hidden}.w3-center .w3-bar{display:inline-block;width:auto}
+.w3-bar .w3-bar-item{padding:8px 16px;float:left;width:auto;border:none;display:block;outline:0}
+.w3-bar .w3-dropdown-hover,.w3-bar .w3-dropdown-click{position:static;float:left}
+.w3-bar .w3-button{white-space:normal}
+.w3-black,.w3-hover-black:hover{color:#fff!important;background-color:#34495e!important}
+.w3-btn,.w3-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+.w3-btn:hover{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)}
+.w3-btn,.w3-button{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+.w3-disabled,.w3-btn:disabled,.w3-button:disabled{cursor:not-allowed;opacity:0.3}.w3-disabled *,:disabled *{pointer-events:none}
+.w3-left{float:left!important}.w3-right{float:right!important}
