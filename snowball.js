@@ -370,7 +370,7 @@ $(document).ready(function() {
 
   var rightbtn = document.getElementById("rightbtn");
   rightbtn.onclick = function() {
-    if (current_modal < htmlist.length) {
+    if (current_modal < htmlist.length - 1) {
       current_modal += 1;
       document.getElementById("textcontain").innerHTML = htmlist[current_modal];
     }
