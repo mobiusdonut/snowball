@@ -3,6 +3,7 @@
   font-size: 100px;
   color: white;
   margin: 0px;
+  margin-top: 20px;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -46,8 +47,9 @@ body {
 
 .notmeta {
   float:left;
-  display: table;
+  display: inline;
   margin: 0 auto;
+  vertical-align: top;
 }
 
 .container {
@@ -63,10 +65,10 @@ body {
   opacity: 0.9;
   margin-left: 10px;
   width: 500px;
-  float: right;
+  vertical-align: top;
 }
 
-.textcontain {
+#textcontain {
   margin: 10px;
 }
 

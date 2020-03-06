@@ -362,13 +362,17 @@ $(document).ready(function() {
     "The Snowball Earth hypothesis proposes that during one or more of Earth's icehouse climates, Earth's surface became entirely or nearly entirely frozen, sometime earlier than 650 Mya during the Cryogenian period.",
     "It was probably caused by rapid weathering of Earth's continents, which sucked carbon dioxide – a planet-warming greenhouse gas – out of the atmosphere and caused temperatures to plummet."
   ];
+  htmlist = [
+    "<h2 id=\"infotexthead\">What is the Snowball Earth Hypothesis?</h2><p id=\"infotext\">The Snowball Earth hypothesis proposes that during one or more of Earth's icehouse climates, Earth's surface became entirely or nearly entirely frozen, sometime earlier than 650 Mya during the Cryogenian period.</p>",
+    "<h2 id=\"infotexthead\">Causes</h2><p id=\"infotext\">It was probably caused by rapid weathering of Earth's continents, which sucked carbon dioxide – a planet-warming greenhouse gas – out of the atmosphere and caused temperatures to plummet.</p>",
+    "<h2 id=\"infotexthead\">Evidence</h2><ul><li id=\"infotext\">Measurement of old rocks that preserved signs of Earth’s ancient magnetic field indicate that rocks known to be associated with the presence of ice were formed near the Equator.</li><li id=\"infotext\">A 45-meter thick layer of manganese ore in the Kalahari Desert with an age corresponding to the end of the 2.4 billion-year “Snowball Earth” period  is thought to have been deposited by rapid and massive changes in global climate as the worldwide covering of ice melted.</li><li id=\"infotext\">By studying chromium, which exists in different states depending on the amount of oxygen in the air, one can estimate oxygen levels. Until 800 million years ago, atmospheric oxygen levels were just one-hundredth of today's levels. </li><ul>"
+  ]
 
   var leftbtn = document.getElementById("leftbtn");
   leftbtn.onclick = function() {
     if (current_modal > 0) {
       current_modal -= 1;
-      document.getElementById("infotexthead").innerHTML = headinglist[current_modal];
-      document.getElementById("infotext").innerHTML = infolist[current_modal];
+      document.getElementById("textcontain").innerHTML = htmlist[current_modal];
     }
   };
 
@@ -376,8 +380,7 @@ $(document).ready(function() {
   rightbtn.onclick = function() {
     if (current_modal < headinglist.length) {
       current_modal += 1;
-      document.getElementById("infotexthead").innerHTML = headinglist[current_modal];
-      document.getElementById("infotext").innerHTML = infolist[current_modal];
+      document.getElementById("textcontain").innerHTML = htmlist[current_modal];
     }
   };
 });
