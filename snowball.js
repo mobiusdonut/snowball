@@ -23,6 +23,7 @@ $(document).ready(function() {
   /*-- Made with Zdog --*/
 
   // setting up Zdog illustration element
+  Zfont.init(Zdog);
   const illoElem = document.querySelector('.illo');
   const illoSize = 50;
   const minWindowSize = Math.min( window.innerWidth - 20, window.innerHeight - 60 );
@@ -45,6 +46,21 @@ $(document).ready(function() {
       isSpinning = false;
     },
     rotate: { y: TAU/4 }
+  });
+
+  // Set up a font to use
+  const comfFont = new Zdog.Font({
+    src: 'fonts/Comfortaa-Bold.ttf'
+  });
+
+  // Create a text object
+  // This is just a Zdog.Shape object with a couple of extra parameters!
+  new Zdog.Text({
+    addTo: illo,
+    font: comfFont,
+    value: 'Hey, Zdog!',
+    fontSize: 64,
+    color: '#fff'
   });
 
   // frontside earth
