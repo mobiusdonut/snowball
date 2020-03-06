@@ -354,14 +354,6 @@ $(document).ready(function() {
 
   var current_modal = 0;
 
-  headinglist = [
-    "What is the Snowball Earth Hypothesis?",
-    "Causes"
-  ];
-  infolist = [
-    "The Snowball Earth hypothesis proposes that during one or more of Earth's icehouse climates, Earth's surface became entirely or nearly entirely frozen, sometime earlier than 650 Mya during the Cryogenian period.",
-    "It was probably caused by rapid weathering of Earth's continents, which sucked carbon dioxide – a planet-warming greenhouse gas – out of the atmosphere and caused temperatures to plummet."
-  ];
   htmlist = [
     "<h2 id=\"infotexthead\">What is the Snowball Earth Hypothesis?</h2><p id=\"infotext\">The Snowball Earth hypothesis proposes that during one or more of Earth's icehouse climates, Earth's surface became entirely or nearly entirely frozen, sometime earlier than 650 Mya during the Cryogenian period.</p>",
     "<h2 id=\"infotexthead\">Causes</h2><p id=\"infotext\">It was probably caused by rapid weathering of Earth's continents, which sucked carbon dioxide – a planet-warming greenhouse gas – out of the atmosphere and caused temperatures to plummet.</p>",
@@ -378,7 +370,7 @@ $(document).ready(function() {
 
   var rightbtn = document.getElementById("rightbtn");
   rightbtn.onclick = function() {
-    if (current_modal < headinglist.length) {
+    if (current_modal < htmlist.length) {
       current_modal += 1;
       document.getElementById("textcontain").innerHTML = htmlist[current_modal];
     }
