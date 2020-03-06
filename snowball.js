@@ -50,7 +50,7 @@ $(document).ready(function() {
 
   // Set up a font to use
   const comfFont = new Zdog.Font({
-    src: 'fonts/Comfortaa-Bold.ttf'
+    src: 'fonts/Comfortaa-Light.ttf'
   });
 
   // Create a text object
@@ -58,9 +58,11 @@ $(document).ready(function() {
   new Zdog.Text({
     addTo: illo,
     font: comfFont,
-    value: 'Hey, Zdog!',
-    fontSize: 64,
-    color: '#fff'
+    value: 'Cryogenian',
+    fontSize: 8,
+    textAlign: 'center',
+    color: '#fff',
+    translate: { x: 0, y: 25, z: 10 },
   });
 
   // frontside earth
