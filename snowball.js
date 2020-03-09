@@ -18,6 +18,15 @@ $(document).ready(function() {
     land6.color = "hsl(146, 34%, " + (34 + this.value * 0.66) +'%)'
     land7.color = "hsl(146, 34%, " + (34 + this.value * 0.66) +'%)'
     land17.color = "hsl(146, 34%, " + (34 + this.value * 0.66) +'%)'
+    if (this.value <= 25) {
+      title.value = "Present"
+    }
+    else if (this.value <= 75) {
+      title.value = "Slushball"
+    }
+    else if (this.value <= 100) {
+      title.value = "Snowball"
+    }
   }
 
   /*-- Made with Zdog --*/
@@ -55,10 +64,10 @@ $(document).ready(function() {
 
   // Create a text object
   // This is just a Zdog.Shape object with a couple of extra parameters!
-  new Zdog.Text({
+  const title = new Zdog.Text({
     addTo: illo,
     font: comfFont,
-    value: 'Cryogenian',
+    value: 'Present',
     fontSize: 8,
     textAlign: 'center',
     color: '#fff',
@@ -375,6 +384,7 @@ $(document).ready(function() {
   htmlist = [
     "<h2 id=\"infotexthead\">What is the Snowball Earth Hypothesis?</h2><p id=\"infotext\">The Snowball Earth hypothesis proposes that during one or more of Earth's icehouse climates, Earth's surface became entirely or nearly entirely frozen, sometime earlier than 650 Mya during the Cryogenian period.</p>",
     "<h2 id=\"infotexthead\">Causes</h2><p id=\"infotext\">It was probably caused by rapid weathering of Earth's continents, which sucked carbon dioxide – a planet-warming greenhouse gas – out of the atmosphere and caused temperatures to plummet.</p>",
+    "<h2 id=\"infotexthead\">Rodinia</h2><p id=\"infotext\">Directly before Snowball Earth, the supercontinent Rodinia was in the process of breaking up. A supercontinent is a state in which all of the continents are clustered together in one group. The breakup of a supercontinent would increase rainfall in the continental areas, and that would increase the weathering of crustal rocks. The weathering of rocks actually consumes carbon dioxide, so that would lead to less carbon dioxide in the atmosphere and therefore a colder climate. The more immediate trigger may be a sequence of very large volcanic eruptions that occurred in what is now the high arctic of Canada around 717 million and 719 million years ago. Lava heating the atmosphere can cause thermal upwelling in the atmosphere which can loft sulfur aerosols into the stratosphere where they hang around for a significant amount of time, reflecting incoming solar radiation and have a strong cooling effect. The coincidence in timing between these eruptions and the onset of the first and longer of the two Snowball Earths has led to postulations that they may have been the immediate trigger.</p>",
     "<h2 id=\"infotexthead\">Evidence</h2><ul><li id=\"infotext\">Measurement of old rocks that preserved signs of Earth’s ancient magnetic field indicate that rocks known to be associated with the presence of ice were formed near the Equator.</li><li id=\"infotext\">A 45-meter thick layer of manganese ore in the Kalahari Desert with an age corresponding to the end of the 2.4 billion-year “Snowball Earth” period  is thought to have been deposited by rapid and massive changes in global climate as the worldwide covering of ice melted.</li><li id=\"infotext\">By studying chromium, which exists in different states depending on the amount of oxygen in the air, one can estimate oxygen levels. Until 800 million years ago, atmospheric oxygen levels were just one-hundredth of today's levels. </li><ul>"
   ]
 
