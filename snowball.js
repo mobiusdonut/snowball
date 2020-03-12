@@ -382,9 +382,56 @@ $(document).ready(function() {
   var current_modal = 0;
 
   htmlist = [
-    "<h2 id=\"infotexthead\">What is the Snowball Earth Hypothesis?</h2><p id=\"infotext\">The Snowball Earth hypothesis proposes that during one or more of Earth's icehouse climates, <strong>Earth's surface became entirely or nearly entirely frozen</strong>, sometime earlier than 650 Mya during the Cryogenian period.</p><img src=\"img/1snearth.png\" style=\"max-width:400px;\"></img>",
-    "<h2 id=\"infotexthead\">Causes</h2><p id=\"infotext\">Directly before Snowball Earth, the supercontinent Rodinia was in the process of breaking up. A supercontinent is a state in which all of the continents are clustered together in one group. The breakup of a supercontinent would increase rainfall in the continental areas, and that would increase the <strong>weathering of crustal rocks</strong>. The weathering of rocks actually consumes carbon dioxide, so that would lead to <strong>less carbon dioxide in the atmosphere</strong> and therefore a <strong>colder climate</strong>.</p><p id=\"infotext\">The more immediate trigger may be a sequence of very large volcanic eruptions that occurred in what is now the high arctic of Canada around 717 million and 719 million years ago. Lava heating the atmosphere can cause <strong?thermal upwelling in the atmosphere</strong> which can loft <strong>sulfur aerosols</strong> into the stratosphere where they hang around for a significant amount of time, <strong>reflecting incoming solar radiation</strong> and have a <strong>strong cooling effect</strong>. The coincidence in timing between these eruptions and the onset of the first and longer of the two Snowball Earths has led to postulations that they may have been the immediate trigger.</p><img src=\"img/2canyon.png\" style=\"max-width:400px;\"></img>",
-    "<h2 id=\"infotexthead\">Evidence</h2><ul><li id=\"infotext\">Measurement of old rocks that preserved signs of Earth’s ancient magnetic field indicate that <strong>rocks known to be associated with the presence of ice were formed near the Equator</strong>.</li><li id=\"infotext\">A 45-meter thick layer of manganese ore in the Kalahari Desert with an age corresponding to the end of the 2.4 billion-year “Snowball Earth” period  is thought to have been deposited by <strong>rapid and massive changes in global climate</strong> as the worldwide covering of ice melted.</li><li id=\"infotext\">By studying chromium, which exists in different states depending on the amount of oxygen in the air, one can estimate oxygen levels. Until 800 million years ago, <strong>atmospheric oxygen levels were just one-hundredth of today's levels</strong>. </li><ul>"
+    `<h2 id=\"infotexthead\">What is the Snowball Earth Hypothesis?</h2>
+    <p id=\"infotext\">The Snowball Earth hypothesis proposes that during one or more of Earth's icehouse climates, <strong>Earth's surface became entirely or nearly entirely frozen</strong>, sometime earlier than 650 Mya during the Cryogenian period.</p>
+    <img src=\"img/1snearth.png\" style=\"max-width:450px;\"></img>`,
+    `<h2 id=\"infotexthead\">Causes</h2>
+    <p id=\"infotext\">Directly before Snowball Earth, the supercontinent Rodinia was in the process of breaking up. A supercontinent is a state in which all of the continents are clustered together in one group. The breakup of a supercontinent would increase rainfall in the continental areas, and that would increase the <strong>weathering of crustal rocks</strong>. The weathering of rocks actually consumes carbon dioxide, so that would lead to <strong>less carbon dioxide in the atmosphere</strong> and therefore a <strong>colder climate</strong>.</p>
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+      <div class="slideshow-align">
+      <!-- Full-width images with number and caption text -->
+       <div class="mySlides fade" style="display:inline;">
+         <div class="numbertext">1 / 4</div>
+         <img src="img/2canyonmorph1.png" style="max-height:400px">
+       </div>
+
+       <div class="mySlides fade">
+         <div class="numbertext">2 / 4</div>
+         <img src="img/2canyonmorph2.png" style="max-height:400px">
+       </div>
+
+       <div class="mySlides fade">
+         <div class="numbertext">3 / 4</div>
+         <img src="img/2canyonmorph3.png" style="max-height:400px">
+       </div>
+
+       <div class="mySlides fade">
+         <div class="numbertext">4 / 4</div>
+         <img src="img/2canyonmorph4.png" style="max-height:400px">
+       </div>
+
+       <!-- Next and previous buttons -->
+       </div>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+     <span class="dot active" onclick="currentSlide(1)"></span>
+     <span class="dot" onclick="currentSlide(2)"></span>
+     <span class="dot" onclick="currentSlide(3)"></span>
+     <span class="dot" onclick="currentSlide(4)"></span>
+     <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <p id=\"infotext\">The more immediate trigger may be a sequence of very large volcanic eruptions that occurred in what is now the high arctic of Canada around 717 million and 719 million years ago. Lava heating the atmosphere can cause <strong?thermal upwelling in the atmosphere</strong> which can loft <strong>sulfur aerosols</strong> into the stratosphere where they hang around for a significant amount of time, <strong>reflecting incoming solar radiation</strong> and have a <strong>strong cooling effect</strong>. The coincidence in timing between these eruptions and the onset of the first and longer of the two Snowball Earths has led to postulations that they may have been the immediate trigger.</p>`,
+    `<h2 id=\"infotexthead\">Evidence</h2>
+    <ul>
+    <li id=\"infotext\">Measurement of old rocks that preserved signs of Earth’s ancient magnetic field indicate that <strong>rocks known to be associated with the presence of ice were formed near the Equator</strong>.</li>
+    <li id=\"infotext\">A 45-meter thick layer of manganese ore in the Kalahari Desert with an age corresponding to the end of the 2.4 billion-year “Snowball Earth” period  is thought to have been deposited by <strong>rapid and massive changes in global climate</strong> as the worldwide covering of ice melted.</li>
+    <li id=\"infotext\">By studying chromium, which exists in different states depending on the amount of oxygen in the air, one can estimate oxygen levels. Until 800 million years ago, <strong>atmospheric oxygen levels were just one-hundredth of today's levels</strong>. </li>
+    <ul>`
   ]
 
   var leftbtn = document.getElementById("leftbtn");
@@ -403,3 +450,32 @@ $(document).ready(function() {
     }
   };
 });
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "inline";
+  dots[slideIndex-1].className += " active";
+}
