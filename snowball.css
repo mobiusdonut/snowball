@@ -195,3 +195,13 @@ strong {
   padding-left: 3px;
   padding-right: 3px;
 }
+
+#footnotes {
+  margin: 10px;
+  text-align: left;
+}
+
+#foottext {
+  text-align: left;
+  font-size: 8px;
+}
