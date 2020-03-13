@@ -402,14 +402,14 @@ $(document).ready(function() {
     <li id=\"infotext\">The <strong>thawing</strong> of Snowball Earth is still unexplained, with one theory suggesting that global warming occurred after the release of greenhouse gases from immense volcanic eruptions, with the amount of carbon dioxide rising to levels hundreds of times greater than present in the atmosphere today.</li>
     <li id=\"infotext\">It must also be demonstrated that <strong>glaciers were active at different global locations at the same time</strong>, and that no other deposits of the same age exist.</li>
     <li id=\"infotext\">The existence of a bed containing sedimentary structures that could have been created <strong>only by glacial activity and deposited in the tropics</strong> would confirm the theory.</li>
-    <ul>`,
-    `<h2 id=\"infotexthead\">Holes in the Theory</h2>
+    <ul>
+    <h2 id=\"infotexthead\">Holes in the Theory</h2>
     <ul>
     <li id=\"infotext\">A mass glaciation would have been accompanied by a mass extinction, but the fossil record <strong>only shows evidence of smaller extinctions</strong>.</li>
     <li id=\"infotext\">There is evidence for the <strong>existence of a water cycle</strong> during the Cryogenian period. Earth being covered with ice would result in a dry atmosphere, and a lack of precipitation, which drives the water cycle.</li>
     <li id=\"infotext\">In the <strong>High-obliquity hypothesis</strong>, Earth’s tilt caused the poles to be warmer than the equator while maintaining a fully functional water cycle and open oceans.</li>
-    <ul>`,
-    `<h2 id=\"infotexthead\">Competing Theories</h2>
+    <ul>
+    <h2 id=\"infotexthead\">Competing Theories</h2>
     <ul>
     <li id=\"infotext\">In the <strong>Slushball Theory</strong>, there was water near the equator but most of Earth was covered by ice.</li>
     <li id=\"infotext\">In the <strong>Zipper Rift Theory</strong>, the breakup of supercontinents resulted in regional glaciation.</li>
