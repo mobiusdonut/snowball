@@ -458,7 +458,7 @@ $(document).ready(function() {
      <span class="dot" onclick="currentSlide(4)"></span>
      <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
-    <p id=\"infotext\">Climate change is similar to the phenomenon that ended Snowball Earth, with both situations involving high levels of atmospheric carbon dioxide trapping heat inside Earth’s atmosphere, creating a greenhouse gas warming effect. While the thawing of Snowball Earth triggered an explosion in animal populations, a mass melting of glaciers today would result in habitat loss in coastal areas and polar regions.</p>
+    <p id=\"infotext\">Climate change is similar to the phenomenon that likely ended Snowball Earth, with both situations involving <strong>high levels of atmospheric carbon dioxide</strong> trapping heat inside Earth’s atmosphere, creating a greenhouse gas warming effect. While the thawing of Snowball Earth triggered an <strong>explosion in animal populations</strong>, a mass melting of glaciers today would result in <strong>habitat loss</strong> in coastal areas and polar regions.</p>
     `
   ]
 
