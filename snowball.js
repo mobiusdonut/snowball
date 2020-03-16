@@ -577,6 +577,7 @@ $(document).ready(function() {
      <span class="dot" onclick="currentSlide(4)"></span>
      <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
+    <p id=\"infotext\">Climate change is the change in average weather patterns over a long period of time and defines Earth’s local, regional, and global climates. Recently, Earth’s climate has shown an increasing temperature over the last few years. These changes are mainly caused by human activities such as fossil-fuel burning which increases the greenhouse-gas levels of Earth.</p>
     <p id=\"infotext\">Climate change is similar to the phenomenon that likely ended Snowball Earth, with both situations involving <strong>high levels of atmospheric carbon dioxide</strong> trapping heat inside Earth’s atmosphere, creating a greenhouse gas warming effect. While the thawing of Snowball Earth triggered an <strong>explosion in animal populations</strong>, a mass melting of glaciers today would result in <strong>habitat loss</strong> in coastal areas and polar regions.</p>
     `
   ]
@@ -609,7 +610,9 @@ $(document).ready(function() {
     <sup id="foottext" style="text-align:left;">5. “'Snowball Earth' Was More a Slushball.” ABC, 5 Dec. 2007, www.abc.net.au/science/articles/ 2007/12/06/2111168.htm.</sup>`,
     `<sup id="foottext" style="text-align:left;">1. Louisiana State University. “Researchers Find New Information about 'Snowball Earth' Period.” ScienceDaily, 28 Feb. 2013, www.sciencedaily.com/releases/2013/02/130228155626.htm.</sup>
     <br>
-    <sup id="foottext" style="text-align:left;">2. Redd, Nola Taylor. “What Was Frigid 'Snowball Earth' Really Like?” Space, 23 Aug. 2013, www.space.com/22501-snowball-earth-ice-ages-history.html.</sup>`
+    <sup id="foottext" style="text-align:left;">2. “Overview: Weather, Global Warming and Climate Change.” NASA, NASA, 28 Aug. 2019, climate.nasa.gov/resources/global-warming-vs-climate-change/.</sup>
+    <br>
+    <sup id="foottext" style="text-align:left;">3. Redd, Nola Taylor. “What Was Frigid 'Snowball Earth' Really Like?” Space, 23 Aug. 2013, www.space.com/22501-snowball-earth-ice-ages-history.html.</sup>`
   ]
 
   var leftbtn = document.getElementById("leftbtn");
